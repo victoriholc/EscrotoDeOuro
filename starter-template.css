@@ -1,17 +1,15 @@
-html
+body
 {
-    height:100%;
-}
-body 
-{
+	overflow-x: hidden;
     padding-top: 50px;
-    background-image: radial-gradient(farthest-corner at 80% 15%, #8E454E 0%,#27070C 100%);    
+    background-image: radial-gradient(farthest-corner at 60% 15%, #8E454E 0%,#27070C 100%);
 }
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
+/*
 #slider {
 	position: relative;
 	margin: 45px 45px 0px 45px;
@@ -25,11 +23,32 @@ body
 	border-radius: 3px;
 }
 
+
 #slider .slide {
 	width: 890px;
 	height: 250px;
 	padding: 10px;
 }
+*/
+
+// Correção ----------------
+#slider {
+  	width: 890px;
+  	position: relative;
+	height: 250px;
+}
+
+#slider .viewer {
+	height: 250px;
+  	border: solid 1px #D4D4D4;
+	border-radius: 3px;
+}
+
+#slider .slide {
+	width: 890px;
+	height: 250px;
+}
+// -------------------------
 
 #slider .indicator {
 	position: relative;
@@ -64,4 +83,11 @@ img.pic {
 	padding: 5px;
 	border: solid 1px #D4D4D4;
 }
-
+img.wide {
+    width: 553px;
+	height: 247px;
+}
+img.tall {
+    max-height: 100%;
+    max-width: 100%;
+}
